@@ -1,5 +1,7 @@
 import "./App.css";
 import reactImage from "./assets/react.svg";
+import HookUseState from "./components/HookUseState";
+import MyFirstComponent from "./components/MyFirstComponent";
 
 function App() {
   const title = "Bienvenue !";
@@ -72,6 +74,10 @@ function App() {
 
       <button onClick={handleClick}>clique ici !</button>
       <button onClick={() => alert("j'ai cliqué !")}>clique ici !</button>
+
+      <MyFirstComponent />
+
+      <HookUseState />
     </>
   );
 }
