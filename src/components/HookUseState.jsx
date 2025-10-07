@@ -9,7 +9,7 @@ function HookUseState() {
 
   // Compléter le compteur -->
   // --> Implémter le 'onCLick' bouton -
-  // --> Implémter le 'reset' bouton -
+  // --> Implémter le 'reset' bouton reset
 
   return (
     <>
