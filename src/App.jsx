@@ -14,19 +14,22 @@ function App() {
     // ( élément que nous avons renommé 'Router')
     <Router>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<JsxTheorie />} />
-        <Route
-          path="/passage-donnee-parent-enfant"
-          element={<MyFirstComponent />}
-        />
-        <Route path="/hook-use-state" element={<HookUseState />} />
-        <Route path="/parcourir-list-avac-map" element={<List />} />
-        <Route path="/formulaire" element={<Form />} />
-        <Route path="/Exercice-fruits-legumes" element={<ExerciceFruits />} />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<JsxTheorie />} />
+          <Route
+            path="/passage-donnee-parent-enfant"
+            element={<MyFirstComponent />}
+          />
+          <Route path="/hook-use-state" element={<HookUseState />} />
+          <Route path="/parcourir-list-avac-map" element={<List />} />
+          <Route path="/formulaire" element={<Form />} />
+          <Route path="/Exercice-fruits-legumes" element={<ExerciceFruits />} />
 
-        <Route path="*" element={<h1>Page 404 !</h1>} />
-      </Routes>
+          <Route path="*" element={<h1>Page 404 !</h1>} />
+        </Routes>
+      </div>
+
       <p>Mon footer ici !</p>
     </Router>
   );
