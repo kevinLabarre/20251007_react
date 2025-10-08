@@ -7,17 +7,17 @@ function HookUseState() {
     setCount((prevValue) => prevValue + 1);
   };
 
-  // Compléter le compteur -->
-  // --> Implémter le 'onCLick' bouton -
-  // --> Implémter le 'reset' bouton reset
+  const reset = () => {
+    setCount(0);
+  };
 
   return (
     <>
       <h1>UseState: exemple compteur</h1>
       count avec useState: {count}
       <button onClick={increment}>+</button>
-      <button>-</button>
-      <button>reset</button>
+      <button onClick={() => setCount((prev) => prev - 1)}>-</button>
+      <button onClick={reset}>reset</button>
     </>
   );
 }

@@ -1,7 +1,9 @@
 import "./App.css";
 import reactImage from "./assets/react.svg";
 import HookUseState from "./components/HookUseState";
+import List from "./components/List";
 import MyFirstComponent from "./components/MyFirstComponent";
+import Form from "./components/Form";
 
 function App() {
   const title = "Bienvenue !";
@@ -78,6 +80,10 @@ function App() {
       <MyFirstComponent />
 
       <HookUseState />
+
+      <List />
+
+      <Form />
     </>
   );
 }
