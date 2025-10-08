@@ -4,6 +4,7 @@ import HookUseState from "./components/HookUseState";
 import List from "./components/List";
 import MyFirstComponent from "./components/MyFirstComponent";
 import Form from "./components/Form";
+import { ExerciceFruits } from "./components/Exercice/ExerciceFruits";
 
 function App() {
   const title = "Bienvenue !";
@@ -84,6 +85,8 @@ function App() {
       <List />
 
       <Form />
+
+      <ExerciceFruits />
     </>
   );
 }
