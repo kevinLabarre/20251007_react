@@ -7,6 +7,7 @@ import List from "./components/List";
 import Form from "./components/Form";
 import { ExerciceFruits } from "./components/Exercice/ExerciceFruits";
 import { Navbar } from "./components/Navbar";
+import { HookUseEffect } from "./components/HookUseEffect";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/parcourir-list-avac-map" element={<List />} />
           <Route path="/formulaire" element={<Form />} />
           <Route path="/Exercice-fruits-legumes" element={<ExerciceFruits />} />
+          <Route path="/hook-use-effect" element={<HookUseEffect />} />
 
           <Route path="*" element={<h1>Page 404 !</h1>} />
         </Routes>
