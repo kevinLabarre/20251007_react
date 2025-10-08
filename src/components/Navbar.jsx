@@ -60,6 +60,9 @@ export const Navbar = () => {
               <li>
                 <Link to="/hook-use-effect">hook useEffect</Link>
               </li>
+              <li>
+                <Link to="/requete-api">Requêtes API</Link>
+              </li>
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost text-xl">
@@ -85,6 +88,9 @@ export const Navbar = () => {
             </li>
             <li>
               <Link to="/hook-use-effect">hook useEffect</Link>
+            </li>
+            <li>
+              <Link to="/requete-api">Requêtes API</Link>
             </li>
           </ul>
         </div>
