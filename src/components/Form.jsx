@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Form() {
   // Exemple 1:
@@ -13,7 +14,7 @@ function Form() {
   return (
     <>
       <h1>Les formulaires</h1>
-      <h2>Les champs contrôlés</h2>
+      <h1>Les champs contrôlés</h1>
       <p>
         En react, nous avons un concept que nous pouvons appeler 'les champs
         contrôlés'. En utilisant le onChange() d'une input et le hook
@@ -35,6 +36,14 @@ function Form() {
 
       {checked ? <p>Case coché !</p> : <p>case non cochée</p>}
       {checked && <p>Case coché !</p>}
+
+      <br />
+      <h1>Les formulaires avec react-hook-form</h1>
+      <h2 className="font-bold">Cliquez sur le lien pour voir l'exemple !</h2>
+      <Link to="/requete-api">
+        Exemple sur l'ajout des produits (bouton ajouter présent sous le
+        tableau)
+      </Link>
     </>
   );
 }

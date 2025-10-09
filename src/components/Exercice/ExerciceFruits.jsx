@@ -63,3 +63,5 @@ export const ExerciceFruits = () => {
     </>
   );
 };
+
+export const test = () => {};
