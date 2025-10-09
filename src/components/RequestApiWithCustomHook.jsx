@@ -20,6 +20,17 @@ export const RequestApiWithCustomHook = () => {
     setProducts((prev) => prev.filter((p) => p.id !== deletedProduct.id));
   };
 
+  const handleAdd = (newProduct) => {
+    setProducts((prev) => [...prev, newProduct]);
+    setDisplayForm(false);
+
+    // Exemple , équivalent à ligne ci-dessus
+    // setProducts((prev) => {
+    //   let copy = [...prev];
+    //   return copy.push(newProduct);
+    // });
+  };
+
   return (
     <>
       <h1>Récupération avec un hook personnalisé</h1>
@@ -28,7 +39,7 @@ export const RequestApiWithCustomHook = () => {
         Ajouter
       </button>
 
-      {displayForm && <ProductForm />}
+      {displayForm && <ProductForm handleAdd={handleAdd} />}
     </>
   );
 };

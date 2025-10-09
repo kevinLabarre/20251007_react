@@ -1,19 +1,19 @@
-import { useEffect } from "react";
 import { useForm } from "react-hook-form";
+import { useProducts } from "../hooks/useProducts";
 
-export const ProductForm = () => {
+export const ProductForm = ({ handleAdd }) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  useEffect(() => {
-    console.log(errors);
-  }, [errors]);
+  const { addProduct } = useProducts();
 
   const mySubmit = (formResult) => {
     console.log("formulaire soumis", formResult);
+
+    addProduct(formResult).then((resp) => handleAdd(resp.data));
   };
 
   return (
