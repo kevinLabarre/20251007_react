@@ -66,6 +66,9 @@ export const Navbar = () => {
               <li>
                 <Link to="/hook-perso">Hook perso.</Link>
               </li>
+              <li>
+                <Link to="/flux">Flux</Link>
+              </li>
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost text-xl">
@@ -97,6 +100,9 @@ export const Navbar = () => {
             </li>
             <li>
               <Link to="/hook-perso">Hook perso.</Link>
+            </li>
+            <li>
+              <Link to="/flux">Flux</Link>
             </li>
           </ul>
         </div>

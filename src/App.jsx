@@ -10,6 +10,7 @@ import { Navbar } from "./components/Navbar";
 import { HookUseEffect } from "./components/HookUseEffect";
 import { RequestApi } from "./components/RequestApi";
 import { CustomHook } from "./components/CustomHook";
+import { Flux } from "./components/Flux";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/hook-use-effect" element={<HookUseEffect />} />
           <Route path="/requete-api" element={<RequestApi />} />
           <Route path="/hook-perso" element={<CustomHook />} />
+          <Route path="/flux" element={<Flux />} />
 
           <Route path="*" element={<h1>Page 404 !</h1>} />
         </Routes>
