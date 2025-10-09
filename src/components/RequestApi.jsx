@@ -1,4 +1,5 @@
 import { RequestApiExemple } from "./RequestApiExemple";
+import { RequestApiWithCustomHook } from "./RequestApiWithCustomHook";
 
 export const RequestApi = () => {
   return (
@@ -34,6 +35,7 @@ export const RequestApi = () => {
       </ul>
       <h2>Exemple :</h2>
       <RequestApiExemple />
+      <RequestApiWithCustomHook />
     </>
   );
 };
