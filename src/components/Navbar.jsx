@@ -22,7 +22,7 @@ export const Navbar = () => {
       <div className="navbar bg-base-100 shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost sm:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -63,13 +63,16 @@ export const Navbar = () => {
               <li>
                 <Link to="/requete-api">Requêtes API</Link>
               </li>
+              <li>
+                <Link to="/hook-perso">Hook perso.</Link>
+              </li>
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost text-xl">
             Accueil
           </Link>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden sm:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
               <Link to="/passage-donnee-parent-enfant">Passage données</Link>
@@ -91,6 +94,9 @@ export const Navbar = () => {
             </li>
             <li>
               <Link to="/requete-api">Requêtes API</Link>
+            </li>
+            <li>
+              <Link to="/hook-perso">Hook perso.</Link>
             </li>
           </ul>
         </div>

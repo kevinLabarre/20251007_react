@@ -20,12 +20,8 @@ export const RequestApiExemple = () => {
       setProducts(resp.data);
       console.log(resp.data);
     });
-
-    axios
-      .get("http://localhost:3001/products")
-      .then((resp) => console.log(resp.data)) // fonction se déclenche uniquement si j'ai un retour sans erreur
-      .catch((err) => console.error(err)) // fonction se déclenche uniquement si j'ai une erreur
-      .finally(() => console.log("réponse reçue"));
+    // .catch((err) => console.error(err)) // fonction se déclenche uniquement si j'ai une erreur
+    // .finally(() => console.log("réponse reçue"));
   };
 
   // Autre syntaxe possible avec axios
