@@ -9,36 +9,6 @@
       "calories": 89,
       "season": "toute l'année",
       "image": "https://images.unsplash.com/photo-1603833665858-e61d17a86224?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80"
-    },
-    {
-      "id": "3",
-      "name": "Carotte",
-      "type": "légume",
-      "color": "orange",
-      "taste": "sucré",
-      "calories": 41,
-      "season": "printemps",
-      "image": "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-    },
-    {
-      "id": "4",
-      "name": "Brocoli",
-      "type": "légume",
-      "color": "vert",
-      "taste": "amer",
-      "calories": 34,
-      "season": "hiver",
-      "image": "https://images.unsplash.com/photo-1584270354949-c26b0d5b4a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-    },
-    {
-      "id": "6",
-      "name": "Tomate",
-      "type": "légume",
-      "color": "rouge",
-      "taste": "acide",
-      "calories": 18,
-      "season": "été",
-      "image": "https://images.unsplash.com/photo-1607305387299-a3d9611cd469?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
     }
   ]
 }

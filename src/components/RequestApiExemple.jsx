@@ -10,6 +10,10 @@ export const RequestApiExemple = () => {
     // loadProductAsync();
   }, []);
 
+  const handleDelete = (product) => {
+    setProducts((prev) => prev.filter((p) => p.id !== product.id));
+  };
+
   const loadProducts = () => {
     // Quand on ne souhaite pas gérer les erreurs, on peut utiliser que le .then
     axios.get("http://localhost:3001/products").then((resp) => {
@@ -37,7 +41,7 @@ export const RequestApiExemple = () => {
   return (
     <>
       <p>Tableau de produits: </p>
-      <TableProducts data={products} />
+      <TableProducts data={products} deleteProduct={handleDelete} />
     </>
   );
 };

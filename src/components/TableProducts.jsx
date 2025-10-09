@@ -1,8 +1,10 @@
 import axios from "axios";
 
-export const TableProducts = ({ data }) => {
+export const TableProducts = ({ data, deleteProduct }) => {
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:3001/products/${id}`);
+    axios
+      .delete(`http://localhost:3001/products/${id}`)
+      .then((resp) => deleteProduct(resp.data));
   };
 
   return (
